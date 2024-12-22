@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Notes.ViewModels"
+             x:Class="Notes.Views.NotePage"
+             Title="Note Jhoel Suarez"
+             Background="Black">
+    <ContentPage.BindingContext>
+        <viewModels:NoteViewModel />
+    </ContentPage.BindingContext>
+    <VerticalStackLayout Spacing="10" Margin="5">
+        <Editor x:Name="TextEditorJHOELS"
+                Placeholder="Enter your note JHOELS"
+                
+                Text="{Binding TextJHOELS}"
+                HeightRequest="100" 
+                BackgroundColor="Gray"
+                TextColor="White"/>
+
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
+            <Button Text="Save"
+                    Command="{Binding SaveCommandJHOELS}"/>
+
+            <Button Grid.Column="1"
+                    Text="Delete"
+                    Command="{Binding DeleteCommandJHOELS}"/>
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

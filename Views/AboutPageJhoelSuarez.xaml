@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Notes.ViewModels"
+             x:Class="Notes.Views.AboutPage"
+             Title="About Jhoel Suarez"
+             Background="Black">
+    <ContentPage.BindingContext>
+        <viewModels:AboutViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <Image Source="meme.png"
+                   HorizontalOptions="Center"/>
+        <Label FontSize="22" FontAttributes="Bold" Text="{Binding TitleJHOELS}" VerticalOptions="End" TextColor="White"/>
+        <Label Text="{Binding MessageJHOELS}" TextColor="White"/>
+        <Button Text="Learn more...JHOELS" Command="{Binding ShowMoreInfoCommandJHOELS}" />
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -431,4 +431,17 @@
         <Setter Property="Shell.TabBarUnselectedColor"
             Value="AntiqueWhite" />
     </Style>
+
+    <Style x:Key="SaveButtonStyleJhoelS" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="Green" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="Padding" Value="10,5" />
+    </Style>
+    <Style x:Key="DeleteButtonStyleJhoelS" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="Red" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="Padding" Value="10,5" />
+    </Style>
 </ResourceDictionary>

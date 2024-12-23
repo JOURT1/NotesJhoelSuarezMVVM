@@ -19,10 +19,12 @@
 
         <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
             <Button Text="Save"
+                    Style="{StaticResource SaveButtonStyleJhoelS}"
                     Command="{Binding SaveCommandJHOELS}"/>
 
             <Button Grid.Column="1"
                     Text="Delete"
+                    Style="{StaticResource DeleteButtonStyleJhoelS}"
                     Command="{Binding DeleteCommandJHOELS}"/>
 
         </Grid>
